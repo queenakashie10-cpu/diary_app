@@ -91,16 +91,6 @@ char morseToChar(const char *code) {
     return '?';
 }
 
-/*
-Encoding format:
-- symbols inside one letter separated by 1 space
-- letters separated by 3 spaces
-- words separated by 7 spaces
-
-Example:
-HELLO WORLD
-.... . .-.. .-.. ---       .-- --- .-. .-.. -..
-*/
 void encodeToMorse(const char *input, char *output) {
     int i;
     int firstLetter = 1;
